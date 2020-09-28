@@ -8,16 +8,16 @@ public class Snack {
     private String name;
     private int quantity;
     private double cost;
-    private int vmID;
+    private int vendingID;
 
-    public Snack(String name, int quantity, double cost, int vmID){
+    public Snack(String name, int quantity, double cost, int vendingID){
         maxId++;
         id = maxId;
 
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
-        this.vmID = vmID;
+        this.vendingID = vendingID;
     }
     //sets & gets
 
@@ -49,10 +49,10 @@ public class Snack {
         this.cost = cost;
     }
     
-    public int getVmID(){
-        return vmID;
+    public int getVendingID(){
+        return vendingID;
     }
-    public void setVmID(int vmID){
-        this.vmID = vmID;
+    public void setVendingID(int vendingID){
+        this.vendingID = vendingID;
     }
 }
