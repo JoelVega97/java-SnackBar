@@ -31,10 +31,10 @@ public class Customer {
     }
 
     public double addCash(double cash){
-        return cashOnHand + cash;
+        return cashOnHand = cashOnHand + cash;
     }
 
-    public double buySnacks(double cost){
-        return cashOnHand - cost;
+    public double buySnacks(double cost, double amount){
+        return cashOnHand = cashOnHand - (amount*cost)  ;
     }
 }
